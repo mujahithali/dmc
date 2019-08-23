@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <title>Coding Test</title>
+
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/dms.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/dms.css"/>
+    </head>
+
+    <body>
+
+        <div class="mainCont"></div>
+
+        <script>
+            $(document).ready(function()
+            {
+                pageInit();
+            });
+        </script>
+
+        <template id="headerMenuHtmlTempl">
+            <div class='headerMainContainerDiv'>
+                <div class='headerHomePageContainerDiv headerMenuTab'>
+                    Home
+                </div>
+                <div class='headerToolsPageContainerDiv headerMenuTab'>
+                    Tools
+                </div>
+            </div>
+            <div class='bottomMainContainerDiv'>
+            </div>
+        </template>   
+
+        <template id="homePageContentHtmlTempl">
+            <div class='homePageMenuIconsDiv'> 
+                <div class='hpMenuArrUpDownImgDiv'> 
+                    <img class='hpMenuArrUpDownImg' sts='down' src='img/arrDown.png'/> 
+                </div>
+                <div class='hpIc1ImgDiv'> 
+                    <img class='hpIc1Img' src='img/ic1.png'/> 
+                    <div class="hpIc1ImgClickContainerDiv">
+                        <div class="hpAddMenuClickDiv" typ="Add"></div>
+                        <div class="hpEditMenuClickDiv" typ="Edit"></div>
+                        <div class="hpActionMenuClickDiv" typ="Doc Action"></div>
+                        <div class="hpColabMenuClickDiv" typ="Collabrate"></div>
+                        <div class="hpRefrMenuClickDiv" typ="Refresh"></div>
+                    </div>
+                </div>
+            </div>
+            <div class='homePageContentContainersDiv'> 
+                <div class='hpWorkspaceContainersDiv'> 
+                    <div class='hpWsTilteContainerDiv'> 
+                        <div class='hpWsTilteDiv'> 
+                            Workspace
+                        </div>
+                        <div class='hpWsTilteArrLeftRightImgDiv'> 
+                            <img class='hpWsTilteArrLeftRightImg' sts='left' src='img/arrLeft.png'/> 
+                        </div>
+                    </div>
+                    <div class='hpWsContentContainerDiv'> 
+                    </div>
+                </div>
+                <div class='hpDocContainerDiv'> 
+                    <div class='hpDocContentDiv'> 
+                        Workspace Contents here ...
+                    </div>
+                </div>
+            </div>
+        </template>
+    </body>
+</html>
